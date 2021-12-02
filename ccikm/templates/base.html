@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title_block %} ccikm-bd {% endblock %} </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+        /* * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+        } */
+        
+        .uper-part {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000e1;
+            text-decoration: none;
+        }
+        .navbar {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #ffffffe1;
+            text-decoration: none;
+        }
+
+        .navbar-up {
+            display: flex;
+            background-color: rgb(249, 249, 250);
+        }
+        
+        .navbar {
+            display: flex;
+            background-color: #205e39;
+        }
+        
+        .nav-link {
+            justify-content: space-between;
+            align-items: left;
+            padding: 10px 5%;
+        }
+
+        .nav-link-up {
+            justify-content: space-between;
+            align-items: left;
+            padding: 10px 5%;
+        }
+        .nav-link input {
+            justify-content: flex-end;
+            align-items: right;
+        }
+        
+        .nav-link {
+            list-style: none;
+        }
+        .uper-part {
+            list-style: none;
+        }
+        
+        .nav-link li {
+            display: inline;
+            padding: 0px 20px;
+        }
+
+        .uper-part li {
+            display: inline;
+            padding: 0px 20px;
+        }
+        
+        .nav-link li a {
+            transition: all 0.3s ease 0s;
+        }
+        
+        .nav-link li a:hover {
+            color: cadetblue;
+        }
+        /* .navbar input[type=text] {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            font-size: 17px;
+        }
+        
+        .navbar input[type=text] {
+            border: 1px solid #ccc;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-up">
+            <!-- <ul class="nav-right">
+                <li>
+                    <a href="#"><span>KnowledgePortal<br>ClimateChangeAdaption-Bangladesh</span></a>
+                </li>
+            </ul> -->
+            <ul class="uper-part">
+                <li><a href="{% url 'index' %}">Home</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <!-- <ul class="nav-right">
+                <li>
+                    <a href="#"><span>KnowledgePortal<br>ClimateChangeAdaption-Bangladesh</span></a>
+                </li>
+            </ul> -->
+            <ul class="nav-link">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="#">NAP</a></li>
+                <li><a href="#">Sector&Programers</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Admin Panel</a></li>
+            </ul>
+            <input type="text" placeholder="Search..">
+        </nav>
+    </header>
+
+    {% block body_block %} {% endblock body_block %}
+</body>
+
+</html>

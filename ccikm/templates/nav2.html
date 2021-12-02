@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<title>ccikm-bd</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="top-head">
+                <a class="disabled" href="#home"><snap>KnowledgePortal<br>ClimateChangeAdaption-Bangladesh</snap></a>
+                    <div class="top-head-right">
+                        <a href="#">Register/Login</a>
+                        <a href="#">Helpdesk</a>
+                    </div>
+            </div>
+            <div class="topnav">
+                <a class="#" href="#home">Home</a>
+                <a href="#">NAP</a>
+                <a href="#">Scetor&Program</a>
+                <a href="#">Tools</a>
+                <a href="#">Library</a>
+                <a href="#">Admin Panel</a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        {% block body_block1 %}
+        {% endblock %}
+    </body>
+</html>

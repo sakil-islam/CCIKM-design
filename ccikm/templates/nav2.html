@@ -4,6 +4,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <link rel="stylesheet" href="{% static 'css/style2.css' %}">
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
 <title>ccikm-bd</title>
@@ -11,7 +12,8 @@
     <body>
         <div class="container">
             <div class="top-head">
-                <a class="disabled" href="#home"><snap><i class="fa fa-globe" style="font-size:48px;color:rgba(9, 194, 70, 0.5)" aria-hidden="true"></i>KnowledgePortal<br>ClimateChangeAdaption-Bangladesh</snap></a>
+                <a class="disabled" href="#home"><i class="fa fa-globe" style="font-size:48px;color:rgba(9, 194, 70, 0.5)" aria-hidden="true"></i></a>
+                <a class="disabled" href="#"><snap>KnowledgePortal<br>ClimateChangeAdaption-Bangladesh</snap></a>
                     <div class="top-head-right">
                         <a href="#">Register/Login</a>
                         <a href="#">Helpdesk</a>
@@ -33,6 +35,8 @@
             </div>
         </div>
         {% block body_block1 %}
+        {% endblock %}
+        {% block body_block2 %}
         {% endblock %}
     </body>
 </html>

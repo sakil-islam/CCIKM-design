@@ -31,26 +31,34 @@
 
 {% endblock %} {% block body_block2 %}
 <div class="body-part">
-    <div class="sidenav">
-        <a class="#" href="#home">Home</a>
-        <a href="#">NAP</a>
-        <a href="#">Scetor&Program</a>
-        <a href="#">Tools</a>
-        <a href="#">Library</a>
+    <div class="body-left">
+        <ul class="sidenav-items">
+            <li class="sidenav-item"><a class="sidenav-link" href="{% url 'index' %}">Home</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#">NAP</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#">Sector&Programers</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#">Tools</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#">Library</a></li>
+        </ul>
     </div>
 
-    <div class="news-part">
-        <div class="news">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
-                vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
-        </div>
-        <div class="news">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
-                vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
-        </div>
-        <div class="news">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
-                vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
+    <div class="news-parts">
+        <h1>An Introduction to CCIKM - BD</h1>
+        <p><b>The Climate Change Information & Knowledge Management - Bangladesh (CCIKM-BD) Portal is the source of information and
+            knowledge-base for anyone working on climate adaptation. In this portal, you will find practical information, useful tools, inspiring
+            examples and the latest news....</b></p>
+        <div class="news-part">
+            <div>
+                <hr>
+                <h1>News</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
+                    vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
+            </div>
+            <div class="news">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
+                    vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
+                        vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
+            </div>
         </div>
     </div>
 </div>

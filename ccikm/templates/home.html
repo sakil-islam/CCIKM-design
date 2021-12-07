@@ -1,133 +1,53 @@
-{% extends 'nav2.html' %}
-{% load static %}
-{% block body_block1 %}
-    <div class= "slider">
-      <input type="radio" name="slider" checked="checked">
-      <div class="imgBx">
+{% extends 'nav2.html' %} {% load static %} {% block body_block1 %}
+<div class="slider">
+    <input type="radio" name="slider" checked="checked">
+    <div class="imgBx">
         <img src="{% static 'image/climate-change-bangladesh3.jpg' %}">
         <div class="content">
-          <p>Latest Story</p>
-          <h1>Worsening Drought in the <br> North-Western Districts</h1>
-          <a href="#">Read More</a>
+            <p>Latest Story</p>
+            <h1>Worsening Drought in the <br> North-Western Districts</h1>
+            <a href="#">Read More</a>
         </div>
-      </div>
-      <input type="radio" name="slider">
-      <div class="imgBx">
+    </div>
+    <input type="radio" name="slider">
+    <div class="imgBx">
         <img src="{% static 'image/climate-change-bangladesh4.jpg' %}">
         <div class="content">
-          <p>Latest Story</p>
-          <h1>Worsening Drought in the <br> North-Western Districts</h1>
-          <a href="#">Read More</a>
+            <p>Latest Story</p>
+            <h1>Worsening Drought in the <br> North-Western Districts</h1>
+            <a href="#">Read More</a>
         </div>
-      </div>
-      <input type="radio" name="slider">
-      <div class="imgBx">
+    </div>
+    <input type="radio" name="slider">
+    <div class="imgBx">
         <img src="{% static 'image/climate-change-bangladesh5.jpg' %}">
         <div class="content">
-          <p>Latest Story</p>
-          <h1>Worsening Drought in the <br> North-Western Districts</h1>
-          <a href="#">Read More</a>
+            <p>Latest Story</p>
+            <h1>Worsening Drought in the <br> North-Western Districts</h1>
+            <a href="#">Read More</a>
         </div>
-      </div>
     </div>
-
-
-
-
-
-
-
-
-<!-- <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="{% static 'image/climate-change-bangladesh.jpg' %}" alt="My image" style="width:100%;height: 100%;">
-      <div class="text">
-        <p>Latest Story</p>
-        <h1>Worsening Drought in the <br> North-Western Districts</h1><br>
-        <button style='font-size:24px'><i class='fas fa-arrow-right'></i>Read More</button>
-      </div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="{% static 'image/climate-change-bangladesh2.jpg' %}" alt="My image" style="width:100%; height: 100%;">
-      <div class="text">
-        <p>Latest Story</p><br>
-        <h1>Worsening Drought in the <br> North-Western Districts</h1><br>
-        <button style='font-size:24px'><i class='fas fa-arrow-right'></i>Read More</button>
-      </div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="{% static 'image/climate-change-bangladesh3.jpg' %}"  style="width:100%;height: 100%;">
-      <div class="text">
-        <p>Latest Story</p><br>
-        <h1>Worsening Drought in the <br> North-Western Districts</h1><br>
-        <button style='font-size:24px'><i class='fas fa-arrow-right'></i>Read More</button>
-      </div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
 </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script> -->
-{% endblock %}
-{% block body_block2 %}
-<div class="body-part">
-  <div class="sidenav">
-    <a class="#" href="#home">Home</a>
-    <a href="#">NAP</a>
-    <a href="#">Scetor&Program</a>
-    <a href="#">Tools</a>
-    <a href="#">Library</a>
-  </div>
-  <div>
-    <div class="news-part">
-      <h3 style="margin-top: 260px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
-    </div>
-    <div>
-      <h3 style="margin-top: 260px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
-    </div>
-  </div>
 
+{% endblock %} {% block body_block2 %}
+<div class="body-part">
+    <div class="sidenav">
+        <a class="#" href="#home">Home</a>
+        <a href="#">NAP</a>
+        <a href="#">Scetor&Program</a>
+        <a href="#">Tools</a>
+        <a href="#">Library</a>
+    </div>
+
+    <div class="news-part">
+        <div class="news">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
+                vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
+        </div>
+        <div class="news">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis mollitia eos accusantium cum obcaecati, nemo temporibus praesentium libero rem perferendis. Totam ex officiis dolorem exercitationem iste natus atque at, facere esse laboriosam
+                vero similique eveniet quasi non dolor omnis fugit corrupti mollitia voluptatibus cumque repellendus, a itaque adipisci illum?</h3>
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -1,0 +1,119 @@
+.news-page {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-top {
+    background-image: linear-gradient(160deg, #2e967f 0%, #e2c648 100%);
+    /* background-color: #1c914b; */
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: gray;
+}
+
+.news-search {
+    background-color: rgb(231, 219, 219);
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    padding: 16px;
+    font: 16px Arial, Verdana, Tahoma, Sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.news-search input {
+    min-width: 20px;
+    padding: 8px;
+    margin: 0 4px 0 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.news-search .button {
+    padding: 8px 16px;
+    min-height: 48px;
+    min-width: 10px;
+    word-wrap: nowrap;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+
+/* More News */
+
+.l-news {
+    width: 100%;
+}
+
+.l-news__content {
+    align-items: center;
+    border-bottom: 1px solid gray;
+    display: flex;
+    padding: 30px 0;
+}
+
+.l-news__content:first-child {
+    border-top: 1px solid gray;
+}
+
+.l-news__content__day {
+    margin-right: 25px;
+}
+
+.l-news__content__label {
+    height: 25px;
+    line-height: 25px;
+    margin-right: 25px;
+    text-align: center;
+    width: 150px;
+}
+
+.p-news__content {
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+}
+
+.p-news__content:hover {
+    opacity: 0.5;
+}
+
+.p-news__content__day {
+    color: gray;
+    font-size: 10px;
+}
+
+.p-news__content__label {
+    background-color: gray;
+    color: white;
+    font-size: 10px;
+}
+
+.p-news__content__text {
+    font-size: 14px;
+}
